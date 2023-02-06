@@ -1,0 +1,165 @@
+.fb_logo {
+    height: 106px;
+    width: 304px;
+    margin: -28px;
+    position: relative;
+    margin-left: 180px;
+    margin-top: 200px;
+}
+
+body {
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.text_under {
+    position: absolute;
+    bottom: 280px;
+    left: 220px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+}
+
+.block {
+    position: absolute;
+    left: 800px;
+    top: 160px;
+    border-radius: 10px;
+    background-color: white;
+    width: 450px;
+    height: 400px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.bot_wind {
+    position: relative;
+    margin-top: 500px;
+    height: 200px;
+    padding: 0%;
+    background-color: white;
+}
+
+.inputlogin {
+    position: absolute;
+    width: 380px;
+    left: 18px;
+    top:30px;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    height: 22px;
+    line-height: 16px;
+    font-size: 17px;
+    padding: 14px 16px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.inputpassword {
+    position: absolute;
+    width: 380px;
+    left: 18px;
+    top:100px;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    height: 22px;
+    line-height: 16px;
+    font-size: 17px;
+    padding: 14px 16px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+input:focus {
+    border: 2px solid #39c; /* Рамка при получении фокуса */
+}
+.vhod{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 6px;
+    border:none;
+    background-color: #1877f2;
+    color:white;
+    width:410px;
+    left:20px;
+    top:170px;
+    font-size: 23px;
+    line-height: 48px;
+}
+.forgot{
+    position: absolute;
+    left:160px;
+    top:250px;
+    color: #1877f2;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+#reg_pages_msg{
+    position: absolute;
+    left:800px;
+    top:580px;
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #404e57;
+}
+.make_page{
+    text-decoration: none;
+    color:black;
+}
+hr{
+    position: absolute;
+    top:280px;
+    left:20px;
+}
+.make_acc{
+    cursor: pointer;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    position: absolute;
+    left:100px;
+    font-family: Helvetica, Arial, sans-serif;
+    top:320px;
+    width: 250px;
+    font-size: 18px;
+    line-height: 48px;
+    color: white;
+}
+ul li{
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: none; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+
+}
+.uiList{
+    top:20px;
+}
+.uiList2 li{
+    color: black;
+
+    text-decoration: none;
+    font-size: 15px;
+}
+._sv4{
+    color: #a19e9e;
+    padding: 10px;
+    text-decoration: none;
+
+}
+.mvlcopyright{
+    position: absolute;
+    left:70px;
+}
+#pageFooter {
+    position: absolute;
+    left: 155px;
+    top: 30px;
+
+}
+
