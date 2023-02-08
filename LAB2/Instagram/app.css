@@ -59,6 +59,10 @@ body {
     position: relative;
 }
 
+.imagein{
+    position: absolute;
+
+}
 .slide-content img {
     position: absolute;
     height: 63vh;
