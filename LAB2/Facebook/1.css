@@ -140,8 +140,8 @@ ul li{
 .uiList{
     top:20px;
 }
-.uiList2 li{
-    color: black;
+.uiList2 a{
+    color: gray;
 
     text-decoration: none;
     font-size: 15px;
