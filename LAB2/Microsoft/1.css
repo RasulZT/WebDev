@@ -1,0 +1,146 @@
+#text-on-pic {
+    position: absolute;
+    color: white;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    left: 100px;
+    top: 150px
+
+}
+
+#text-on-pic2 {
+    position: absolute;
+    color: black;
+    font-family: Arial, sans-serif;
+
+    left: 200px;
+    top: 1250px
+
+}
+
+#main-pic {
+    position: absolute;
+    left: 0px;
+    top: 75px;
+}
+
+#header {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    left: 220px;
+    top: 30px
+
+}
+
+#business1 {
+    position: absolute;
+    left: 70px;
+    top: 1750px;
+}
+
+#business2 {
+    position: absolute;
+    left: 410px;
+    top: 1750px;
+}
+
+#business3 {
+    position: absolute;
+    left: 750px;
+    top: 1750px;
+}
+
+#business4 {
+    position: absolute;
+    left: 1090px;
+    top: 1750px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.link {
+    color: black;
+}
+
+a.bottom-link {
+    color: #3f6aab;
+}
+
+a.bottom-link:focus {
+    outline-style: dashed;
+}
+
+#bott-pic1 {
+    position: absolute;
+    left: 70px;
+    top: 630px;
+}
+
+#bott-pic2 {
+    position: absolute;
+    left: 410px;
+    top: 630px;
+}
+
+#bott-pic3 {
+    position: absolute;
+    left: 750px;
+    top: 630px;
+}
+
+#bott-pic4 {
+    position: absolute;
+    left: 1090px;
+    top: 630px;
+}
+
+#button1 {
+    cursor: pointer;
+    background-color: #2e47ab;
+    height: 38px;
+    padding: 12px;
+    font-size: 15px;
+    color: white;
+    border: 0;
+    position: absolute;
+    left: 100px;
+    bottom: 240px;
+}
+
+#button1:focus {
+    outline-style: dashed;
+    outline-width: 2px;
+    outline-offset: -4px;
+}
+
+#button2 {
+    cursor: pointer;
+    background-color: #2e47ab;
+    height: 38px;
+    padding: 12px;
+    font-size: 15px;
+    color: white;
+    border: 0;
+    position: absolute;
+    left: 200px;
+    top: 1470px
+}
+
+#button2:focus {
+    outline-style: dashed;
+    outline-width: 2px;
+    outline-offset: -4px;
+}
+
+#main-pic2 {
+    position: absolute;
+    left: 80px;
+    top: 1100px;
+}
