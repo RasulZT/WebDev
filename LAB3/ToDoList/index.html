@@ -1,37 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
     <title>Simple To Do List</title>
-    <style >
+    <style>
         *,
         *:before,
-        *:after{
+        *:after {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             height: 100vh;
             margin: 0px;
         }
-        .navbar{
+
+        .navbar {
             height: 100px;
             background: #111111;
             color: white;
         }
-        .navbar p{
+
+        .navbar p {
             font-size: 20px;
             position: absolute;
             left: 100px;
-            top:30px;
+            top: 30px;
         }
-        .container{
+
+        .container {
             width: 40%;
             min-width: 450px;
             position: absolute;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             top: 50%;
             left: 50%;
             background: white;
@@ -39,14 +42,15 @@
 
         }
 
-        #newtask{
+        #newtask {
             position: relative;
             padding: 30px 20px;
         }
-        #newtask input{
+
+        #newtask input {
             width: 75%;
             height: 45px;
-            font-family: 'Poppins',sans-serif;
+            font-family: 'Poppins', sans-serif;
             font-size: 15px;
             border: 2px solid #d1d3d4;
             padding: 12px;
@@ -55,18 +59,19 @@
             position: relative;
             border-radius: 5px;
         }
-        #newtask input:focus{
+
+        #newtask input:focus {
             outline: none;
             border-color: #0d75ec;
         }
 
-        #newtask button{
+        #newtask button {
             position: relative;
             float: right;
             width: 20%;
             height: 45px;
             border-radius: 5px;
-            font-family: 'Poppins',sans-serif;
+            font-family: 'Poppins', sans-serif;
             font-weight: 500;
             font-size: 16px;
             background-color: #0d75ec;
@@ -75,18 +80,24 @@
             cursor: pointer;
             outline: none;
         }
-        .task input:checked + span{
+
+        .task input:checked + span {
             text-decoration: line-through;
         }
-        #tasks{
+
+        #tasks {
             background-color: #ffffff;
             padding: 30px 20px;
             margin-top: 10px;
             border-radius: 10px;
             width: 100%;
             position: relative;
+            overflow-y: auto;
+            height: 300px;
+            border: 1px solid black;
         }
-        .task{
+
+        .task {
             height: 50px;
             margin-bottom: 8px;
             padding: 5px 10px;
@@ -97,12 +108,14 @@
             border: 1px solid black;
             cursor: pointer;
         }
-        .task span{
-            font-family: 'Poppins',sans-serif;
+
+        .task span {
+            font-family: 'Poppins', sans-serif;
             font-size: 15px;
             font-weight: 400;
         }
-        .task button{
+
+        .task button {
             background-color: red;
             color: #ffffff;
             height: 100%;
@@ -113,7 +126,7 @@
             outline: none;
         }
 
-        .completed{
+        .completed {
             text-decoration: line-through;
         }
     </style>
@@ -131,11 +144,10 @@
     <div id="tasks"></div>
 </div>
 <script type="text/javascript">
-    document.querySelector('#push').onclick = function(){
-        if(document.querySelector('#newtask input').value.length == 0){
+    document.querySelector('#push').onclick = function () {
+        if (document.querySelector('#newtask input').value.length == 0) {
             alert("Введите текст!")
-        }
-        else{
+        } else {
             document.querySelector('#tasks').innerHTML += `
             <div class="task">
                 <input type ="checkbox">
@@ -146,16 +158,16 @@
                     <i class="far fa-trash-alt"></i>
                 </button>
             </div>
-        `;
 
+
+        `;
+            document.querySelector('#newtask input').value = '';
             var current_tasks = document.querySelectorAll(".delete");
-            for(var i=0; i<current_tasks.length; i++){
-                current_tasks[i].onclick = function(){
+            for (var i = 0; i < current_tasks.length; i++) {
+                current_tasks[i].onclick = function () {
                     this.parentNode.remove();
                 }
             }
-
-
 
 
         }
