@@ -1,0 +1,27 @@
+<div class="products">
+  <p class="products_title">
+    Products
+  </p>
+  <div class="products_container">
+    <div class="products_item" *ngFor="let item of items;let i = index">
+      <p class="products_item_name" (click)="goToRealPage(i)">
+        {{item.name}}
+      </p>
+      <img class="products_item_image" (click)="goToRealPage(i)" src="{{item.currectImg}}">
+      <p class="products_item_description">
+        {{item.description}}
+      </p>
+      <p class="products_item_raiting">
+        {{item.raiting}}
+      </p>
+      <div class="products_item_galery">
+        <img src="{{galeryItem}}" *ngFor="let galeryItem of item.galery ; let j = index"
+             (click)="changeCurrentImg(i,j)">
+      </div>
+
+      <button class="products_item_share" (click)="shareWithTelegram(i)">
+        Share
+      </button>
+    </div>
+  </div>
+</div>
