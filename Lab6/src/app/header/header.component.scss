@@ -1,0 +1,14 @@
+.header {
+  height: 150px;
+  width: 100vw;
+  opacity: 90%;
+  display: flex;
+  background-color: #ead708;
+  justify-content: center;
+  &_name {
+    font-size: 48px;
+    color: #ab3939;
+    font-weight: 700;
+    padding: 0px 0px 0px 0px;
+  }
+}
