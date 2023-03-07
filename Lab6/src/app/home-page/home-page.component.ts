@@ -13,4 +13,8 @@ export class HomePageComponent {
   goToAboutPage() {
     this.router.navigate(["about"])
   }
+
+  goToAlbumsPage() {
+    this.router.navigate(['albums'])
+  }
 }

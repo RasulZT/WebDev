@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { AlbumPhotosComponent } from './album-photos/album-photos.component';
+import { AlbumListComponent } from './album-list/album-list.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -17,13 +19,15 @@ import { AlbumPhotosComponent } from './album-photos/album-photos.component';
     HeaderComponent,
     HomePageComponent,
     AboutPageComponent,
-    AlbumPhotosComponent
+    AlbumPhotosComponent,
+    AlbumListComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

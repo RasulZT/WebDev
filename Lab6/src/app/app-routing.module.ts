@@ -4,6 +4,7 @@ import {HomePageComponent} from "./home-page/home-page.component";
 import {AboutPageComponent} from "./about-page/about-page.component";
 import {AlbumComponent} from "./album/album.component";
 import {AlbumPhotosComponent} from "./album-photos/album-photos.component";
+import {AlbumListComponent} from "./album-list/album-list.component";
 
 const routes: Routes = [
   {
@@ -19,8 +20,12 @@ const routes: Routes = [
     component: AboutPageComponent,
   },
   {
-    path: 'albums',
-    component: AlbumComponent,
+    path:'albums',
+    component:AlbumListComponent,
+  },
+  {
+    path:'albums/:id',
+    component:AlbumComponent,
   },
   {
     path: 'album/:id/photos',
