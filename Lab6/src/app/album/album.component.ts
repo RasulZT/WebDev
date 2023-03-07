@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {AlbumService} from '../services/album.service';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-album',
@@ -7,21 +8,40 @@ import {AlbumService} from '../services/album.service';
   styleUrls: ['./album.component.scss']
 })
 export class AlbumComponent implements OnInit {
-  @Input() albumPhotosChild: any[] = [];
-  @Output() outputAlbom = new EventEmitter();
+  album: any;
+  id: number;
+  public isEdit: boolean = false
+  editableText: string = "";
 
-  constructor(private albumService: AlbumService) {
+  constructor(private albumService: AlbumService, private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit(): void {
-    this.getAlbums()
+    console.log(this.activatedRoute)
+    this.id = this.activatedRoute.snapshot.params['id']
+    this.getAlbumById()
   }
 
-  getAlbums() {
-    this.albumService.getAlbums().subscribe(result => {
-      this.outputAlbom.emit(result);
+  getAlbumById() {
+    this.albumService.getAlbumById(this.id).subscribe(result => {
+      this.album = result
     }, error => {
       console.log(error)
     })
+  }
+
+  edit() {
+    this.isEdit = true
+    this.editableText = this.album.title
+  }
+
+  save() {
+    this.albumService.albums.forEach((album: any) => {
+      if (album.title === this.album.title) {
+        album.title = this.editableText
+      }
+    })
+    this.album.title = this.editableText
+    this.isEdit = false
   }
 }

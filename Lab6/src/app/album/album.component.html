@@ -1,7 +1,19 @@
-<div *ngFor="let photos of albumPhotosChild">
-  <p>{{photos.id}}</p>
-  <p>{{photos.userId}}</p>
-  <p>{{photos.title}}</p>
-  <img src="{{photos.url}}">
-  <br>
+<div class="container">
+  <div class="container_title_box" *ngIf="isEdit===false">
+    <a></a>
+    <p class="container_title">
+      Title: {{album?.title}}
+    </p>
+    <button class="container_but" (click)="edit()">
+      Edit
+    </button>
+  </div>
+  <div class="container_change" *ngIf="isEdit===true">
+    <input class="container_inp" [(ngModel)]="editableText" type="text">
+    <button class="container_but2" (click)="save()">
+      Save
+    </button>
+  </div>
+  <img
+    src="https://gamerwall.pro/uploads/posts/2022-03/1648710748_1-gamerwall-pro-p-fon-na-temu-priroda-krasivie-1.jpg">
 </div>
