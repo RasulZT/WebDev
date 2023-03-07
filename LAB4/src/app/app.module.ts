@@ -7,20 +7,16 @@ import { HeaderComponent } from './shared/header/header.component';
 import { ProductsComponent } from './products/products.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HeaderComponent,
-        ProductsComponent
-    ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule
-    ],
-    providers: [],
-  exports: [
+  declarations: [
+    AppComponent,
     HeaderComponent,
     ProductsComponent
   ],
-    bootstrap: [AppComponent]
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
