@@ -19,7 +19,7 @@ import {FormsModule} from "@angular/forms";
     HeaderComponent,
     HomePageComponent,
     AboutPageComponent,
-    AlbumPhotosComponent
+    AlbumPhotosComponent,
     AlbumListComponent
   ],
     imports: [
