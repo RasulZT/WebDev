@@ -1,4 +1,13 @@
-#text-on-pic {
+body{
+margin: 0px;
+}
+.for_business{
+    position: absolute;
+    top:1700px;
+    left: 150px;
+    font-size: 30px;
+}
+#img_txt {
     position: absolute;
     color: white;
     font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -7,21 +16,19 @@
     top: 150px
 
 }
-
-#text-on-pic2 {
+.second_img{
     position: absolute;
+    top:1100px;
+    left: 100px;
+    background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Hero-MSCOM-Outlook-iOS-Android:VP5-1596x600");
+    width: 1300px;
+    height: 500px;
+}
+#second_img_txt {
     color: black;
     font-family: Arial, sans-serif;
+    padding: 110px 0px 0px 80px;
 
-    left: 200px;
-    top: 1250px
-
-}
-
-#main-pic {
-    position: absolute;
-    left: 0px;
-    top: 75px;
 }
 
 #header {
@@ -32,30 +39,15 @@
     top: 30px
 
 }
-
-#business1 {
+.bottom_image_galery{
+    display: flex;
     position: absolute;
-    left: 70px;
-    top: 1750px;
+    top:1800px;
+    width: 1400px;
+    column-gap: 30px;
+    padding-left: 40px;
 }
 
-#business2 {
-    position: absolute;
-    left: 410px;
-    top: 1750px;
-}
-
-#business3 {
-    position: absolute;
-    left: 750px;
-    top: 1750px;
-}
-
-#business4 {
-    position: absolute;
-    left: 1090px;
-    top: 1750px;
-}
 
 a {
     text-decoration: none;
@@ -76,29 +68,20 @@ a.bottom-link {
 a.bottom-link:focus {
     outline-style: dashed;
 }
-
-#bott-pic1 {
-    position: absolute;
-    left: 70px;
-    top: 630px;
+.under_header_img{
+    width: 1499px;
+    height: 500px;
+    background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP5-1920x600");
 }
-
-#bott-pic2 {
+.image_galery{
     position: absolute;
-    left: 410px;
-    top: 630px;
-}
-
-#bott-pic3 {
-    position: absolute;
-    left: 750px;
-    top: 630px;
-}
-
-#bott-pic4 {
-    position: absolute;
-    left: 1090px;
-    top: 630px;
+    top:650px;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
 }
 
 #button1 {

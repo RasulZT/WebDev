@@ -1,9 +1,9 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProductService {
+export class ProdServiceService {
 
   public categories = [
     {
@@ -640,7 +640,5 @@ export class ProductService {
       ]
     }
   ]
-
-  constructor() {
-  }
+  constructor() { }
 }

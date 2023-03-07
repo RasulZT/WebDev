@@ -39,7 +39,9 @@ body {
     display: flex;
     flex-grow: 1;
 }
-
+.logo:hover{
+    cursor: pointer;
+}
 .main-content {
     margin: 32px auto;
     display: flex;
@@ -62,6 +64,10 @@ body {
 .imagein{
     position: absolute;
 
+}
+
+.imagein:hover{
+    cursor: pointer;
 }
 .slide-content img {
     position: absolute;

@@ -17,6 +17,7 @@ export class ProductCategoriesComponent implements OnInit {
     this.categories = this.productService.categories
   }
 
+
   goToCategoryProducts(category: any) {
     this.router.navigate(["products/" + category.name])
   }
