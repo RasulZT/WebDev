@@ -17,6 +17,7 @@ export class AlbumPhotosComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log(this.activatedRoute)
     this.albumId = this.activatedRoute.snapshot.params['id']
     this.albumService.getAlbumPhotos(this.albumId).subscribe(result => {
       console.log(result)
@@ -27,6 +28,6 @@ export class AlbumPhotosComponent implements OnInit {
   }
 
   goToAlbum() {
-    this.router.navigate(['/album/' + this.albumId]);
+    this.router.navigate(['albums/' + this.albumId]);
   }
 }

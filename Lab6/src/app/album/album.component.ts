@@ -48,4 +48,8 @@ export class AlbumComponent implements OnInit {
   goBack() {
     this.router.navigate(['albums'])
   }
+
+  goToPhotos(id:number) {
+    this.router.navigate([`albums/${id}`+`/photos`])
+  }
 }

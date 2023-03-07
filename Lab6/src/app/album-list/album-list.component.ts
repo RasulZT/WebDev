@@ -24,4 +24,10 @@ export class AlbumListComponent implements OnInit {
   goToPageById(id: number) {
     this.router.navigate([`albums/${id}`])
   }
+  removeProduct(i: number) {
+    this.albums = this.albums.filter((item: any) => {
+      return item !== this.albums[i]
+    });
+    this.albumService.albums.find((item: { id: any; }) => item.id === i).albums = this.albums
+  }
 }
