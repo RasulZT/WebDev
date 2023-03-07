@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {AlbumService} from '../services/album.service';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-album',
@@ -13,7 +13,7 @@ export class AlbumComponent implements OnInit {
   public isEdit: boolean = false
   editableText: string = "";
 
-  constructor(private albumService: AlbumService, private activatedRoute: ActivatedRoute) {
+  constructor(private albumService: AlbumService, private activatedRoute: ActivatedRoute,private router:Router) {
   }
 
   ngOnInit(): void {
@@ -43,5 +43,9 @@ export class AlbumComponent implements OnInit {
     })
     this.album.title = this.editableText
     this.isEdit = false
+  }
+
+  goBack() {
+    this.router.navigate(['albums'])
   }
 }
