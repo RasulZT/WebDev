@@ -1,22 +1,23 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 import {HomePageComponent} from "./home-page/home-page.component";
 import {AboutPageComponent} from "./about-page/about-page.component";
 import {AlbumComponent} from "./album/album.component";
+import {AlbumPhotosComponent} from "./album-photos/album-photos.component";
 import {AlbumListComponent} from "./album-list/album-list.component";
 
 const routes: Routes = [
   {
-    path:'',
-    component:HomePageComponent,
+    path: '',
+    component: HomePageComponent,
   },
   {
-    path:'home',
-    component:HomePageComponent,
+    path: 'home',
+    component: HomePageComponent,
   },
   {
-    path:'about',
-    component:AboutPageComponent,
+    path: 'about',
+    component: AboutPageComponent,
   },
   {
     path:'albums',
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path:'albums/:id',
     component:AlbumComponent,
+  },
+  {
+    path: 'album/:id/photos',
+    component: AlbumPhotosComponent,
   }
 ];
 
@@ -32,4 +37,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
