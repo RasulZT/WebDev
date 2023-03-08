@@ -30,4 +30,9 @@ export class AlbumListComponent implements OnInit {
     });
     this.albumService.albums.find((item: { id: any; }) => item.id === i).albums = this.albums
   }
+
+  deleteAlbum(i: number) {
+    this.albums.splice(i,1)
+    this.albumService.albums=this.albums
+  }
 }

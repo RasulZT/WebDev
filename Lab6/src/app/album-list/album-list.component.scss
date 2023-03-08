@@ -31,15 +31,22 @@
       flex-direction: column;
       margin: 20px 0px 0px 20px;
       width: 250px;
-      height: 200px;
       border: 1px solid blueviolet;
       border-radius: 10px;
+      &_delete{
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+
       &_name{
         font-family: sans-serif;
         font-size: 24px;
         margin-left: 10px;
       }
       &_but{
+        display: inline-block;
         overflow-y: auto;
         margin-top: auto;
         margin-bottom: 10px;
