@@ -31,8 +31,25 @@ class ProductByIdView(APIView):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 
-def getProductsByCategoryId(request):
-    return HttpResponse("Get pr by category")
+class ProductsByCategoryView(APIView):
+    def get(self, request, id):
+        # Получаем продукты по категории
+        products = Product.objects.filter(category__id=id)
+        product_serializer = ProductSerializer(products, many=True)
+        return Response(product_serializer.data, status=HTTP_200_OK)
+
+    def post(self, request, id):
+        category = Category.objects.filter(id=id).first()
+        product = Product(
+            name=request.data["name"],
+            price=request.data["price"],
+            description=request.data["description"],
+            count=request.data["count"],
+            is_active=request.data["is_active"]
+        )
+        product.save()
+        category.products.add(product)
+        return Response( status=HTTP_201_CREATED)
 
 
 class CategoryByIdView(APIView):

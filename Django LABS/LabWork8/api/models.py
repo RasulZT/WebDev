@@ -12,3 +12,4 @@ class Product(models.Model):
 
 class Category(models.Model):
     name = models.CharField(max_length=30)
+    products = models.ManyToManyField(Product)
