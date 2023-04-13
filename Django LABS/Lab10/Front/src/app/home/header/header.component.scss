@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 16px 48px;
+  background-color: cornflowerblue;
+
+  &_logo {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+  }
+  &_logout{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    margin-left: 1100px;
+    margin-top: 50px;
+    padding: 10px;
+    height: 30px;
+  }
+}
